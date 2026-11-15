@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>A Day on the Lake</title>
+  <link rel="stylesheet" href="style.css">
+  <script src="script.js" defer></script>
+</head>
+<body>
+  <main>
+    <section class="intro">
+      <h1>A Day on<br> the Lake</h1>
+      <audio id="soundscape" controls preload="metadata">
+        <source src="audio/soundscape.mp3" type="audio/mpeg">
+      </audio>
+    </section>
+
+    <section class="visuals">
+      <div class="stage">
+        <video id="walking-video" src="video/walking.mp4" aria-label="Walking through the grass" muted loop playsinline preload="auto"></video>
+        <video id="boat-video" src="video/boat.mp4" aria-label="A boat ride on the lake" muted playsinline preload="metadata" hidden></video>
+        <video id="fishing-video" src="video/fishing.mp4" aria-label="Stopping the boat and getting ready to fish" muted playsinline preload="metadata" hidden></video>
+        <img id="scene-image" src="images/catch.jpg" alt="A fish in a blue bucket" hidden>
+      </div>
+      <nav class="chapters" aria-label="Soundscape chapters">
+        <button class="chapter" type="button" aria-current="true">0:00 On Foot</button>
+        <button class="chapter" type="button">0:32 On the Boat</button>
+        <button class="chapter" type="button">0:43 Ready to Fish</button>
+        <button class="chapter" type="button">0:56 The Catch</button>
+      </nav>
+    </section>
+  </main>
+</body>
+</html>

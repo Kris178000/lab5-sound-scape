@@ -1,0 +1,93 @@
+* {
+  box-sizing: border-box;
+}
+
+body {
+  margin: 0;
+  background-color: #f6f5ed;
+  color: #173738;
+  font-family: Arial, sans-serif;
+}
+
+main {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  gap: 54px;
+  max-width: 1260px;
+  min-height: 100vh;
+  padding: 32px;
+  margin: 0 auto;
+}
+
+.intro {
+  flex: 1 1 270px;
+}
+
+h1 {
+  margin: 0;
+  font-family: Georgia, serif;
+  font-size: 80px;
+  font-weight: normal;
+  letter-spacing: -4px;
+  line-height: 0.95;
+}
+
+p {
+  max-width: 330px;
+  margin: 22px 0;
+  color: #49635e;
+  line-height: 1.6;
+}
+
+audio {
+  width: 100%;
+  max-width: 365px;
+}
+
+.visuals {
+  flex: 2 1 400px;
+}
+
+.stage {
+  position: relative;
+  height: 60vh;
+  min-height: 300px;
+  max-height: 600px;
+  overflow: hidden;
+  border-radius: 16px;
+  background: linear-gradient(#345763, #1c353b);
+  box-shadow: 0 12px 34px #19373620;
+}
+
+.stage img, .stage video {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  object-fit: contain;
+}
+
+.chapters {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 8px;
+  margin-top: 12px;
+}
+
+.chapter {
+  flex: 1 1 auto;
+  padding: 10px 12px;
+  background-color: #f6f5ed;
+  color: #173738;
+  border: 1px solid #bfcfc5;
+  border-radius: 7px;
+  font: inherit;
+  font-size: 14px;
+  cursor: pointer;
+}
+
+.chapter:hover, .chapter[aria-current="true"] {
+  background-color: #e1ece3;
+}
